@@ -5,7 +5,7 @@
     --cor-1: #C7031B;
     --cor-2: #fff;
     --cor-3: rgba(0, 0, 0, 0.4);
-    
+    --fonte-prin: 'Amarante', cursive;
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Amarante', cursive;
+    font-family: var(--fonte-prin)
 }
 
 .container {
@@ -80,7 +80,7 @@ body {
     z-index: -1;
 }
 
-@media (min-aspect-ratio:16/10) {
+@media (min-aspect-ratio:16/9) {
     .background-clip {
         width: 100%;
         height: auto;
@@ -88,9 +88,44 @@ body {
 
 }
 
-@media (max-aspect-ratio:16/10) {
+@media (max-aspect-ratio:16/9) {
     .background-clip {
         width: auto;
         height: 100%;
     }
+}
+
+@keyframes esconde-more {
+    0%{
+        opacity: 1;
+        display: inline;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes some-logo {
+    0%{
+        opacity: 1;
+        display: inline;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+    
+}
+
+@keyframes some-logo2 {
+    0%{
+        opacity: 1;
+        display: inline;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+    
 }
