@@ -79,6 +79,87 @@ body {
     bottom: 0;
     z-index: -1;
 }
+.card{
+    width: 295px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(../img/noticia1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+
+}
+
+#box-noticia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: calc(50% - 305px);
+    left: calc(50% - 325px);
+    display: none;
+    gap: 50px
+    
+}
+
+.card1, .card3{
+    display: block;
+    margin: 10px 5px auto auto;
+}
+
+.card2, .card4{
+    display: block;
+    margin: 10px auto auto 5px;
+}
+
+
+.card1{
+    background-image: url(../img/noticia1.webp);
+     
+} 
+.card2{
+    background-image: url(../img/noticia2.jpg);
+   
+} 
+.card3{
+    background-image: url(../img/noticia3.jpeg);
+    
+} 
+.card4{
+    background-image: url(../img/noticia4.webp);
+    
+} 
+
+.texto-box{
+    color: var(--cor-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-aspect-ratio:16/9) {
     .background-clip {
@@ -128,4 +209,14 @@ body {
         display: none;
     }
     
+}
+@keyframes aparece-box {
+    0% {
+        opacity: 0;
+        display: grid;
+    }
+    100%{
+        opacity: 1;
+        display: grid;
+    }
 }
