@@ -81,8 +81,8 @@ body {
     z-index: -1;
 }
 .card{
-    width: 295px;
-    height: 270px;
+    width: 450px;
+    height: 275px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -92,6 +92,9 @@ body {
     background-image: url(../img/noticia1.jpg);
     background-position: center;
     background-size: cover;
+    opacity: 0.67;
+    transition: all 0.4s ease;
+
     
 
 
@@ -100,9 +103,10 @@ body {
 #box-noticia{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     position: absolute;
     top: calc(50% - 305px);
-    left: calc(50% - 325px);
+    left: calc(50% - 480px);
     display: none;
     gap: 50px
     
@@ -121,20 +125,49 @@ body {
 
 .card1{
     background-image: url(../img/noticia1.jpg);
+    grid-column: 1;
+    grid-row: 1;
      
 } 
 .card2{
     background-image: url(../img/noticia2.webp);
+    grid-column: 2;
+    grid-row: 1;
    
 } 
 .card3{
-    background-image: url(../img/jemappele.png);
+    background-image: url(../img/noticia3.jpeg);
+    grid-column: 1;
+    grid-row: 2;
     
 } 
 .card4{
     background-image: url(../img/noticia4.webp);
-    
+    grid-column: 2;
+    grid-row: 2;
 } 
+
+
+
+.card:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.amine-title{
+color: #000000;
+}
+.amine-text{
+color: #000000;
+}
+
+
+.nocta-title{
+    color: #fff;
+}
+.nocta-text{
+color: yellowgreen;
+}
 
 .jemappelle{
     color: #C7031B
@@ -142,10 +175,13 @@ body {
 .jemappelle-text{
     color:  #000000;
 }
-.title-box {
-    color: #C7031B ;
-}
 
+.louis-title{
+    color: #026499;
+}
+.louis-text {
+    color: #fff;
+}
 
 
 
