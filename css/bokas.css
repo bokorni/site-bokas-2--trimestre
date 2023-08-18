@@ -66,6 +66,7 @@ body {
     border: 2px solid var(--cor-2);
     border-radius: 50px;
     transition: 0.3s;
+    
 }
 
 .content a:hover {
@@ -119,15 +120,15 @@ body {
 
 
 .card1{
-    background-image: url(../img/noticia1.webp);
+    background-image: url(../img/noticia1.jpg);
      
 } 
 .card2{
-    background-image: url(../img/noticia2.jpg);
+    background-image: url(../img/noticia2.webp);
    
 } 
 .card3{
-    background-image: url(../img/noticia3.jpeg);
+    background-image: url(../img/jemappele.png);
     
 } 
 .card4{
@@ -135,8 +136,14 @@ body {
     
 } 
 
-.texto-box{
-    color: var(--cor-2);
+.jemappelle{
+    color: #C7031B
+}
+.jemappelle-text{
+    color:  #000000;
+}
+.title-box {
+    color: #C7031B ;
 }
 
 
