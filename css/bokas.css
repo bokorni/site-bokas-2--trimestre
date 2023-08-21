@@ -56,6 +56,17 @@ body {
     top: 300px;
     z-index: 2;
 }
+.descricao{
+    display: none;
+
+}
+
+
+.content a:hover .descricao{
+ width: 70px;
+ height: 70px;
+ color: var(--cor-2);
+}
 
 
 .content a {
@@ -108,10 +119,13 @@ body {
     top: calc(50% - 305px);
     left: calc(50% - 480px);
     display: none;
-    gap: 50px
-    
-}
+    gap: 50px;
 
+
+}
+#box-noticia a{
+    text-decoration: none;
+}
 .card1, .card3{
     display: block;
     margin: 10px 5px auto auto;
@@ -130,10 +144,10 @@ body {
      
 } 
 .card2{
-    background-image: url(../img/noticia2.webp);
+    background-image: url(../img/noticia2.jpg);
     grid-column: 2;
     grid-row: 1;
-   
+   background-position: bottom;
 } 
 .card3{
     background-image: url(../img/noticia3.jpeg);
@@ -142,9 +156,11 @@ body {
     
 } 
 .card4{
-    background-image: url(../img/noticia4.webp);
+    background-image: url(../img/noticia5.webp);
     grid-column: 2;
     grid-row: 2;
+    background-position: top;
+    
 } 
 
 
@@ -154,33 +170,36 @@ body {
     transform: scale(1.1);
 }
 
-.amine-title{
-color: #000000;
+
+.amine-title {
+color: #ff0062;
 }
-.amine-text{
+
+.amine-text {
 color: #000000;
+
 }
 
 
 .nocta-title{
-    color: #fff;
+    color: #fff
 }
 .nocta-text{
-color: yellowgreen;
+color: yellow
 }
 
-.jemappelle{
-    color: #C7031B
+.jemappelle-title{
+    color:#31ff16;
 }
 .jemappelle-text{
-    color:  #000000;
+    color: #fffb0a;
 }
 
 .louis-title{
-    color: #026499;
+    color:  #fff; 
 }
 .louis-text {
-    color: #fff;
+    color: #07acff;
 }
 
 
