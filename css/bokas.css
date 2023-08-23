@@ -4,7 +4,11 @@
 :root {
     --cor-1: #C7031B;
     --cor-2: #fff;
-    --cor-3: rgba(0, 0, 0, 0.4);
+    --cor-3: #000;
+    --cor-4:  #fffb0a;
+    --cor-5: #07acff;
+    --cor-6: #ff0062;
+    --cor-7: #31ff16;
     --fonte-prin: 'Amarante', cursive;
 }
 
@@ -21,7 +25,7 @@ body {
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor-3);
+    background-color: transparent;
     display: flex;
    align-items: center; 
     justify-content: center;
@@ -36,12 +40,12 @@ body {
 .content h1 {
     user-select: none;
     left: 45vw;
-    font-size: 95px;
+    font-size: 80px;
     color: var(--cor-2);
     margin-bottom: 50px;
     font-weight: 100;
     position: absolute;
-    top: 300px;
+    top: 100px;
     z-index: 1;
     opacity: 1;
 }
@@ -53,21 +57,10 @@ body {
     margin-bottom: 50px;
     font-weight: 100;
     position: absolute;
-    top: 300px;
+    top: 100px;
     z-index: 2;
 }
-.descricao{
-    display: none;
-
-}
-
-
-.content a:hover .descricao{
- width: 70px;
- height: 70px;
- color: var(--cor-2);
-}
-
+ 
 
 .content a {
     padding: 15px 25px;
@@ -77,12 +70,15 @@ body {
     border: 2px solid var(--cor-2);
     border-radius: 50px;
     transition: 0.3s;
+    z-index: 2;
+
     
 }
 
 .content a:hover {
     background-color:var(--cor-2);
     color: var(--cor-1);
+
 }
 
 .background-clip {
@@ -111,6 +107,68 @@ body {
 
 }
 
+.header{
+    background-color: var(--cor-3);
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.jornal{
+    
+   
+    font-size: 25px;
+    color: var(--cor-2);
+    margin-bottom: 50px;
+    font-weight: 100;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+     
+
+}
+.jornal2{
+    color: var(--cor-1);
+    font-size: 25px;
+    margin-bottom: 45px;
+    font-weight: 100;
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+}
+
+.nav{
+    width: 100px;
+}
+.button{
+    width: 100px;
+}
+
+.noticia-principal{
+    border: 1px solid green;
+    height: 85vh;
+    width: 43vw;
+    margin-left: 5vw;
+    margin-top: 40px;
+    
+}
+
+.noticia-segunda{
+    display: inline;
+    justify-content: center;
+    margin-left: 30px;
+    height: 100vh;
+    flex-direction: column;
+    border: 1px solid red;
+    align-self: center;
+
+}
+
+.mini-noticia{
+   
+   
+
+}
 #box-noticia{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,34 +230,34 @@ body {
 
 
 .amine-title {
-color: #ff0062;
+color: var(--cor-6);
 }
 
 .amine-text {
-color: #000000;
+color: var(--cor-3);
 
 }
 
 
 .nocta-title{
-    color: #fff
+    color: var(--cor-2)
 }
 .nocta-text{
-color: yellow
+color: var(--cor-4)
 }
 
 .jemappelle-title{
-    color:#31ff16;
+    color:var(--cor-7);
 }
 .jemappelle-text{
-    color: #fffb0a;
+    color: var(--cor-4);
 }
 
 .louis-title{
-    color:  #fff; 
+    color: var(--cor-5); 
 }
 .louis-text {
-    color: #07acff;
+    color:var()  ;
 }
 
 
