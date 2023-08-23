@@ -205,7 +205,7 @@ body {
     background-image: url(../img/noticia2.jpg);
     grid-column: 2;
     grid-row: 1;
-   background-position: bottom;
+   
 } 
 .card3{
     background-image: url(../img/noticia3.jpeg);
@@ -239,11 +239,11 @@ color: var(--cor-3);
 }
 
 
-.nocta-title{
-    color: var(--cor-2)
+.suf-title{
+    color: var(--cor-3)
 }
-.nocta-text{
-color: var(--cor-4)
+.suf-text{
+color: var(--cor-2)
 }
 
 .jemappelle-title{
@@ -254,10 +254,10 @@ color: var(--cor-4)
 }
 
 .louis-title{
-    color: var(--cor-5); 
+    color: var(--cor-2); 
 }
 .louis-text {
-    color:var()  ;
+    color:var(--cor-5)  ;
 }
 
 
