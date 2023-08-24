@@ -1,15 +1,18 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 
 :root {
     --cor-1: #C7031B;
     --cor-2: #fff;
     --cor-3: #000;
-    --cor-4:  #fffb0a;
+    --cor-4: #fffb0a;
     --cor-5: #07acff;
     --cor-6: #ff0062;
     --cor-7: #31ff16;
     --fonte-prin: 'Amarante', cursive;
+    --fonte-jornal: 'Inter', sans-serif;
 }
 
 * {
@@ -19,7 +22,11 @@
 }
 
 body {
-    font-family: var(--fonte-prin)
+    font-family: var(--fonte-prin);
+    background-image: url('../img/redbelly.webm');
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 .container {
@@ -27,13 +34,13 @@ body {
     height: 100vh;
     background-color: transparent;
     display: flex;
-   align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
 .content {
     justify-content: center;
-    text-align: center;   
+    text-align: center;
     align-items: center;
 }
 
@@ -49,6 +56,7 @@ body {
     z-index: 1;
     opacity: 1;
 }
+
 .content h2 {
     user-select: none;
     left: 44vw;
@@ -60,7 +68,7 @@ body {
     top: 100px;
     z-index: 2;
 }
- 
+
 
 .content a {
     padding: 15px 25px;
@@ -72,11 +80,11 @@ body {
     transition: 0.3s;
     z-index: 2;
 
-    
+
 }
 
 .content a:hover {
-    background-color:var(--cor-2);
+    background-color: var(--cor-2);
     color: var(--cor-1);
 
 }
@@ -87,7 +95,8 @@ body {
     bottom: 0;
     z-index: -1;
 }
-.card{
+
+.card {
     width: 450px;
     height: 275px;
     display: inline-block;
@@ -102,21 +111,39 @@ body {
     opacity: 0.67;
     transition: all 0.4s ease;
 
-    
+
 
 
 }
 
-.header{
+.header {
     background-color: var(--cor-3);
     display: flex;
-    justify-content: space-between;
     height: 40px;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.jornal{
-    
-   
+
+nav {
+    grid-column: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.zike-logo {
+    grid-column: 2;
+}
+
+.button {
+    grid-column: 3;
+}
+
+.jornal {
+
+
     font-size: 25px;
     color: var(--cor-2);
     margin-bottom: 50px;
@@ -124,10 +151,11 @@ body {
     position: absolute;
     top: 10px;
     z-index: 1;
-     
+
 
 }
-.jornal2{
+
+.jornal2 {
     color: var(--cor-1);
     font-size: 25px;
     margin-bottom: 45px;
@@ -137,39 +165,121 @@ body {
     z-index: 2;
 }
 
-.nav{
-    width: 100px;
-}
-.button{
+.nav {
     width: 100px;
 }
 
-.noticia-principal{
-    border: 1px solid green;
-    height: 85vh;
-    width: 43vw;
-    margin-left: 5vw;
-    margin-top: 40px;
+.button {
+    width: 100px;
+}
+
+.noticia-principal {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #07acff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.txt-news {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.txt-news h1 {
+    text-align: center;
+}
+
+.txt-news h4 {
+    text-align: center;
+}
+
+.img-principal {
+    width: 80%;
+    height: 90vh;
+    margin-top: 5vh;
+}
+
+.img-principal img {
+    width: 100%;
+    height: 100%;
+}
+.img-boot{
+    width: 80%;
+    height: 130vh;
+}
+.img-boot img{
+    width: 100%;
+    height: 100%;
+}
+.img-amine{
+    width: 80%;
+    height: 100vh;
+}
+.img-amine img {
+    width: 100%;
+    height: 100%;
+}
+
+.texto-principal {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: left;
+    margin-top: 5vh;
+}
+
+.caixinha-news{
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5vh auto 0;
+}
+
+.caixa{
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.caixa-img{
+    width: 100%;
+    height: 50%;
+}
+
+.txt-caixa{
+    width: 100%;
+    height: 50%;
+    margin-top: 5px;
     
 }
-
-.noticia-segunda{
-    display: inline;
-    justify-content: center;
-    margin-left: 30px;
-    height: 100vh;
-    flex-direction: column;
-    border: 1px solid red;
-    align-self: center;
+.txt-caixa a{
+ text-decoration: none;
+ font-size: 15px;
+ color: var(--cor-3);
+}
+.caixa-img img{
+    width: 100%;
+    height: 100%;
+}
+.texto-principal p {
+    
+    font-size: 15px;
+    font-family: var(--fonte-jornal);
 
 }
 
-.mini-noticia{
-   
-   
-
-}
-#box-noticia{
+#box-noticia {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -181,83 +291,93 @@ body {
 
 
 }
-#box-noticia a{
+
+#box-noticia a {
     text-decoration: none;
 }
-.card1, .card3{
+
+.card1,
+.card3 {
     display: block;
     margin: 10px 5px auto auto;
 }
 
-.card2, .card4{
+.card2,
+.card4 {
     display: block;
     margin: 10px auto auto 5px;
 }
 
 
-.card1{
+.card1 {
     background-image: url(../img/noticia1.jpg);
     grid-column: 1;
     grid-row: 1;
-     
-} 
-.card2{
+
+}
+
+.card2 {
     background-image: url(../img/noticia2.jpg);
     grid-column: 2;
     grid-row: 1;
-   
-} 
-.card3{
+
+}
+
+.card3 {
     background-image: url(../img/noticia3.jpeg);
     grid-column: 1;
     grid-row: 2;
-    
-} 
-.card4{
+
+}
+
+.card4 {
     background-image: url(../img/noticia5.webp);
     grid-column: 2;
     grid-row: 2;
     background-position: top;
-    
-} 
+
+}
 
 
 
-.card:hover{
+.card:hover {
     opacity: 1;
     transform: scale(1.1);
 }
 
 
 .amine-title {
-color: var(--cor-6);
+    color: var(--cor-6);
 }
 
 .amine-text {
-color: var(--cor-3);
+    color: var(--cor-3);
 
 }
 
 
-.suf-title{
+.suf-title {
     color: var(--cor-3)
 }
-.suf-text{
-color: var(--cor-2)
+
+.suf-text {
+    color: var(--cor-2)
 }
 
-.jemappelle-title{
-    color:var(--cor-7);
+.jemappelle-title {
+    color: var(--cor-7);
 }
-.jemappelle-text{
+
+.jemappelle-text {
     color: var(--cor-4);
 }
 
-.louis-title{
-    color: var(--cor-2); 
+.louis-title {
+    color: var(--cor-2);
 }
+
 .louis-text {
-    color:var(--cor-5)  ;
+    color: var(--cor-5);
 }
 
 
@@ -297,45 +417,50 @@ color: var(--cor-2)
 }
 
 @keyframes esconde-more {
-    0%{
+    0% {
         opacity: 1;
         display: inline;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
 }
 
 @keyframes some-logo {
-    0%{
+    0% {
         opacity: 1;
         display: inline;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
-    
+
 }
 
 @keyframes some-logo2 {
-    0%{
+    0% {
         opacity: 1;
         display: inline;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
-    
+
 }
+
 @keyframes aparece-box {
     0% {
         opacity: 0;
         display: grid;
     }
-    100%{
+
+    100% {
         opacity: 1;
         display: grid;
     }
