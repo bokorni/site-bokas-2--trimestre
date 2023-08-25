@@ -42,11 +42,12 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .content h1 {
     user-select: none;
-    left: 45vw;
+    margin: 0 auto;
     font-size: 80px;
     color: var(--cor-2);
     margin-bottom: 50px;
@@ -57,9 +58,9 @@ body {
     opacity: 1;
 }
 
-.content h2 {
+.content h2  {
     user-select: none;
-    left: 44vw;
+    margin: 0 auto;
     font-size: 88px;
     color: var(--cor-1);
     margin-bottom: 50px;
@@ -67,6 +68,8 @@ body {
     position: absolute;
     top: 100px;
     z-index: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -79,10 +82,12 @@ body {
     border-radius: 50px;
     transition: 0.3s;
     z-index: 2;
+    
 
 
 }
-
+ 
+ 
 .content a:hover {
     background-color: var(--cor-2);
     color: var(--cor-1);
@@ -134,9 +139,9 @@ nav {
 }
 
 .coisas {
-    width: 8%;
+    width: 100px;
     height: auto;
-    margin-left: 130vh;
+    justify-content: space-between;
 }
 nav a {
     text-decoration: none;
@@ -159,7 +164,7 @@ nav a {
     position: absolute;
     top: 10px;
     z-index: 1;
-    left: 95vh;
+    
 
 
 }
@@ -192,6 +197,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     margin-top: 5vh;
+    
 }
 
 .txt-news h1 {
@@ -245,25 +251,82 @@ nav a {
     align-items: center;
     margin: 5vh auto 0;
     border-radius: 15px;
+  
 }
 
 .caixa{
     width: 30%;
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 6px 5px 4px  var(--cor-3);
+    transition: all 0.4s ease;
+     
+    
     
 
 }
+.caixa:hover{
+    transform: scale(1.1);
+}
 .caixa-img{
     width: 100%;
-    height: 50%;
+    height: 100%;
+ 
    
 }
  
 .caixa-img img{
     width: 100%;
     height: 100%; 
+    border-radius: 15px;
+    opacity: 0;
+}
+#img1{
+    background-image: url('../img/noticia2.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-name: img1-animation;
+    animation-duration: 5s;
+    animation-delay: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    border-radius: 15px;
+    
+
+}
+#img2{
+    background-image: url('../img/noticia3.jpeg');
+    background-size: cover;
+    background-position: center;
+    animation-name: img2-animation;
+    animation-duration: 5s;
+    animation-delay: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    border-radius: 15px;
+}
+#img3{
+    background-image: url('../img/noticia4.webp');
+    background-size: cover;
+    background-position: center;
+    animation-name: img3-animation;
+    animation-duration: 5s;
+    animation-delay: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    border-radius: 15px;
+}
+#img4{
+    background-image: url('../img/noticia4.webp');
+    background-size: cover;
+    background-position: center;
+    animation-name: img4-animation;
+    animation-duration: 5s;
+    animation-delay: 1.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
     border-radius: 15px;
 }
 .txt-caixa{
@@ -389,11 +452,33 @@ nav a {
 
 
 
-@media only screen and (max-width: 986px) {
+@media (max-width: 1500px) {
+    
     #box-noticia{
+        flex-direction: column;
+    }
+    #logo{
+        text-align: center;
+        width: 100px ;
+        margin: 0 auto;
+    }
+    #logo2{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .img-principal{ width: 70vw;
+        height: auto;
       
     } 
-
+    .img-amine{
+        width: 70vw;
+        height: auto;
+    }
+    .img-boot{
+        width: 70vw;
+        height: auto;
+    }
     .container-yakuza {
         display: flex;
         flex-direction: column;
@@ -405,6 +490,13 @@ nav a {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+    .txt-news{
+        margin:200px
+    }
+    .texto-principal{
+        height: 60vh;
+        margin-top: 90px;
     }
     @keyframes aparece-box {
         0% {
@@ -419,23 +511,6 @@ nav a {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-aspect-ratio:16/9) {
     .background-clip {
@@ -499,5 +574,69 @@ nav a {
     100% {
         opacity: 1;
         display: grid;
+    }
+}
+@keyframes img1-animation{
+    0%{
+        background-image: url('../img/noticia2.jpg');
+    }
+    50%{
+        background-image: url('../img/suf.jpg');
+        background-position: top;
+    
+    }
+    100%{
+        background-image: url('../img/suf3.webp');
+        background-position: center;
+    
+    }
+}
+@keyframes img2-animation{
+    0%{
+        background-image: url('../img/noticia3.jpeg');
+    }
+    50%{
+        background-image: url('../img/jema2.jpg');
+        background-position: top;
+    }
+    100%{
+        background-image: url('../img/jema4.jpg');
+        background-position: center;
+    
+        
+    }
+}
+@keyframes img3-animation{
+    0%{
+        background-image: url('../img/noticia4.webp');
+        
+    
+    }
+    50%{
+        background-image: url('../img/louis2.webp');
+        background-position: top;
+    
+    }
+    100%{
+        background-image: url('../img/louis3.webp');
+        background-position: center;
+    
+    }
+}
+@keyframes img4-animation{
+    0%{
+        background-image: url('../img/noticia1.jpg');
+        
+    
+    }
+    50%{
+        background-image: url('../img/amine.webp');
+        background-position: top;
+    
+    }
+    100%{
+        background-image: url('../img/amine1.webp');
+        background-position: center;
+    
     }
 }
